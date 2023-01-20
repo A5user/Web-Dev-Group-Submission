@@ -94,27 +94,27 @@ body {
   }
 
   .search-bar {
-    display: flex; /* display the search bar as a flex container */
-    justify-content: center; /* center the elements inside the container */
-    align-items: center; /* center the elements vertically */
-    margin: 20px 0; /* add some margin to the top and bottom of the container */
-    width: 80%; /* set the width of the container */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0; 
+    width: 80%; 
   }
 
   #search-input {
-    padding: 10px; /* add some padding to the input field */
-    font-size: 20px; /* increase the font size */
-    width: 60%; /* set the width of the input field */
-    margin-right: 10px; /* add some margin to the right of the input field */
+    padding: 10px; 
+    font-size: 20px; 
+    width: 60%; 
+    margin-right: 10px; 
   }
 
   #search-button {
-    padding: 10px 20px; /* add some padding to the button */
-    font-size: 20px; /* increase the font size */
-    background-color: #4CAF50; /* change the background color of the button */
-    color: white; /* change the text color of the button */
-    border: none; /* remove the border */
-    cursor: pointer; /* change the cursor to a pointer */
+    padding: 10px 20px; 
+    font-size: 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
   }
 
   .faq-section {
@@ -128,25 +128,25 @@ body {
   }
 
   #faq-search {
-    width: 80%; /* set a fixed width for the search bar */
-    margin: 20px auto; /* center the search bar horizontally with 'auto' margins on the left and right */
+    width: 80%; 
+    margin: 20px auto; 
   }
 
   #suggestions {
     position: absolute;
     top: 150px;
-     /* adjust the top value as per the search bar's position */
+     
     width: 80%;
-    margin: 0 auto; /* center the element horizontally */
-    text-align: center; /* center the text inside the element */
+    margin: 0 auto; 
+    text-align: center; 
   }
 
   .question-class {
-    color: rgb(56, 55, 55); /* for example */
+    color: rgb(56, 55, 55); 
 
   }
   .answer-class {
-    color: rgb(0, 0, 0); /* for example */
+    color: rgb(0, 0, 0); 
   padding-top: 10px;
   background-color: #f0f0f0;
   padding: 10px;

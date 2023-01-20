@@ -1,5 +1,5 @@
 function submitForm() {
-    // Get the form elements
+    
     const courseSelect = document.getElementById("course-select");
     const rating = document.getElementById("rating");
     const feedback = document.getElementById("feedback");
@@ -45,7 +45,7 @@ function submitForm() {
   document.getElementById("feedback-form").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("Thank you for your feedback!");
-    //Resetting the form
+    
     document.getElementById("feedback-form").reset();
   });
   

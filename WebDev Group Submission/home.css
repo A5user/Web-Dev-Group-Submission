@@ -43,14 +43,14 @@ footer {
 #hamburger-button {
   position: relative;
   display: inline-block;
-  cursor: pointer; /* Change the cursor to a pointer on hover */
+  cursor: pointer; 
     padding: 6px;
   background-color: #091e92;
   padding-bottom: 2px;
   padding-top: 2px;
   border-radius: 5px;
   margin-top: -30px;
-/* Add a margin of 10px to the bottom of the button */
+
   }
 
 .bar {
@@ -61,37 +61,37 @@ footer {
 }
 
 #dropdown-menu {
-  display: none; /* Hide the dropdown menu by default */
-  position: absolute; /* Position the dropdown menu */
-  background-color: #f9f9f9; /* Light gray background color */
-  min-width: 160px; /* Set a minimum width for the dropdown menu */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow to the dropdown menu */
+  display: none; 
+  position: absolute; 
+  background-color: #f9f9f9; 
+  min-width: 160px; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
 }
 
 #dropdown-menu a {
-  color: black; /* Black text color */
-  padding: 12px 16px; /* Add some padding to the links */
-  text-decoration: none; /* Remove the underlines from the links */
-  display: block; /* Display the links as block elements */
+  color: black; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  display: block; 
 }
 
 #dropdown-menu a:hover {
-  background-color: #f1f1f1; /* Light gray background color on hover */
+  background-color: #f1f1f1; 
 }
 
 #hamburger-button:hover #dropdown-menu {
-  display: block; /* Show the dropdown menu when the button is hovered over */
+  display: block; 
 }
 
 #onlineEd{
-    width: 50%; /* Adjust as needed */
-    height: auto; /* Keep aspect ratio */
+    width: 50%; 
+    height: auto; 
 }
 #logo {
   position: relative;
   top: -35px;
-  width: 75px; /* Adjust as needed */
-  height: auto; /* Keep aspect ratio */
+  width: 75px; 
+  height: auto; 
   border-radius: 100px;
   float: left;
 }

@@ -38,10 +38,10 @@
 #nav:hover #menu {background-color: #3e8e41;}
 
 .bar {
-  width: 35px; /* Set the width of the bars */
-  height: 5px; /* Set the height of the bars */
-  margin: 6px 0; /* Add some margin between the bars */
-  background-color: #fff; /* White bar color */
+  width: 35px; 
+  height: 5px;
+  margin: 6px 0; 
+  background-color: #fff; 
 }
 
 

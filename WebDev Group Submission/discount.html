@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="discount.css">
+    <meta charset="utf-8">
+    <title>Discount</title>
+  </head>
+  <body>
+
+    <div id="container">
+
+      <div id="nav">
+        <span id="dropdown"><ion-icon name="menu"></ion-icon></span>
+        <div id="dropdown-content">
+          <a href="home.html"><ion-icon name="home"></ion-icon> Home </a>
+          <a href="about us.html"><ion-icon name="people"></ion-icon> About us</a>
+          <a href="Course page.html"><ion-icon name="book"></ion-icon> Course</a>
+          <a href="time table.html"><ion-icon name="calendar"></ion-icon> Schedule</a>
+          <a href="registration.html"><ion-icon name="clipboard"></ion-icon> Register</a>
+          <a href="discount.html"><ion-icon name="pricetags"></ion-icon> Discount</a>
+          <a href="paymentPage.html"><ion-icon name="card"></ion-icon> Payment</a>
+          <a href="feedback.html"><ion-icon name="thumbs-up"></ion-icon> Feedback</a>
+          <a href="Studentsupport.html"><ion-icon name="help"></ion-icon> Help</a>
+          <a href="privacypolicy.html"><ion-icon name="lock"></ion-icon> Privacy</a>
+          <a href="contactus.html"><ion-icon name="call"></ion-icon> Contact</a>
+        </div>
+      </div>
+
+      <div id="title">
+        <span>Application for discounted price</span>
+      </div>
+
+      <form class="" action="index.html" method="post">
+
+
+      <div id="instruction">
+        <span><strong>Please Fill in all required details</strong></span>
+      </div>
+
+      <div id="user-detail">
+        <div id="input-box">
+          <span id="detail">Parent's Status</span>
+          <select id="" name="">
+            <option value="default">Select</option>
+            <option value="staytgt">Staying together</option>
+            <option value="divorced">Divorced</option>
+            <option value="1pass">Either 1 passed away</option>
+            <option value="bothPass">Both passed away</option>
+          </select>
+        </div>
+        <div id="input-box">
+          <span id="detail">Household Status</span>
+          <select class="" name="">
+            <option value="default">Select</option>
+            <option value="B40">B40</option>
+            <option value="M40">M40</option>
+            <option value="T20">T20</option>
+          </select>
+        </div>
+        <div id="input-box">
+          <span id="detail">Father's Occupation</span>
+          <input type="text" id="jobf" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">Mother's Occupation</span>
+          <input type="text" id="jobm" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">Total Household Income</span>
+          <input type="text" id="totalIncome" required>
+        </div>  <div id="input-box">
+            <span id="detail">Amount of people in the Household</span>
+            <input type="text" id="totalppl" required>
+          </div>
+
+        <div id="upload-payslip">
+          <span>Upload both Parent's payslip</span>
+          <br>
+          <input type="file" id="payslip-file" required>
+
+        </div>
+
+      </div>
+
+      <div id="apply">
+        <button type="button" id="btnApply">Apply</button>
+      </div>
+
+      <div id="response">
+
+
+      </div>
+
+      <div id="hint">
+        <span>p/s:Please register first before applying for discount</span>
+
+      </div>
+
+      </form>
+
+    </div>
+
+    <script type="text/javascript">
+
+    var btnApply = document.getElementById('btnApply');
+      var jobf = document.getElementById('jobf');
+      var jobm = document.getElementById('jobm');
+      var totalIncome = document.getElementById('totalIncome');
+      var totalppl = document.getElementById('totalppl');
+
+      function openPopup()
+      {
+          if (jobf.value == ""||jobm.value==""||totalIncome.value==""||totalppl.value=="")
+          {
+            document.getElementById('response').textContent="Incomplete detail";
+          }
+          else
+          {
+            document.getElementById('response').textContent="Application sent!!";
+          }
+      }
+
+
+      btnApply.onclick = openPopup;
+
+
+    </script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+  </body>
+</html>

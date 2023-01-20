@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div id="nav">
+        <span class="dropdown"><ion-icon name="menu"></ion-icon></span>
+        <div class="dropdown-content">
+          <a href="home.html"><ion-icon name="home"></ion-icon> Home </a>
+          <a href="about us.html"><ion-icon name="people"></ion-icon> About us</a>
+          <a href="Course page.html"><ion-icon name="book"></ion-icon> Course</a>
+          <a href="time table.html"><ion-icon name="calendar"></ion-icon> Schedule</a>
+          <a href="registration.html"><ion-icon name="clipboard"></ion-icon> Register</a>
+          <a href="discount.html"><ion-icon name="pricetags"></ion-icon> Discount</a>
+          <a href="paymentPage.html"><ion-icon name="card"></ion-icon> Payment</a>
+          <a href="feedback.html"><ion-icon name="thumbs-up"></ion-icon> Feedback</a>
+          <a href="Studentsupport.html"><ion-icon name="help"></ion-icon> Help</a>
+          <a href="privacypolicy.html"><ion-icon name="lock"></ion-icon> Privacy</a>
+          <a href="contactus.html"><ion-icon name="call"></ion-icon> Contact</a>
+        </div>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="col">
+            <h3 class="title">billing address</h3>
+            <div class="inputBox">
+              <span>full name :</span>
+              <input type="text" id="Fname" placeholder="jamal akmal">
+            </div>
+
+            <div class="inputBox">
+              <span>email :</span>
+              <input type="text" placeholder="example269@example.com">
+            </div>
+
+            <div class="inputBox">
+              <span>address :</span>
+              <input type="text" placeholder="room-street-locality">
+            </div>
+
+            <div class="inputBox">
+              <span>city :</span>
+              <input type="text" placeholder="gombak">
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>state :</span>
+                <input type="text" placeholder="selangor">
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input type="text" placeholder="22100">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">payment</h3>
+
+            <div class="inputBox">
+              <span>cards accepted :</span>
+              <img src="card_img.png" alt="">
+            </div>
+
+            <div class="inputBox">
+              <span>name on card:</span>
+              <input type="text" placeholder="dio brando">
+            </div>
+
+            <div class="inputBox">
+              <span>credit/debit card number :</span>
+              <input type="text" placeholder="1111-2222-3333-4444">
+            </div>
+
+            <div class="inputBox">
+              <span>month :</span>
+              <input type="text" placeholder="january">
+            </div>
+
+            <div class="flex">
+              <span>exp year :</span>
+              <input type="text" placeholder="2022">
+            </div>
+
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" placeholder="123">
+            </div>
+
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="SUBMIT" class="submit-btn">
+      </form>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="text/javascript">
+          // create a div to hold the error message
+      var errorMessage = $('<div>', {
+          class: 'error-message',
+          text: 'Please fill out all fields before submitting.'
+      });
+
+      // add the error message to the form
+      $('form').append(errorMessage);
+
+      // hide the error message by default
+      errorMessage.hide();
+
+      $('form').submit(function(event) {
+          // check if any fields are empty
+          if ($('form input').filter(function() { return !this.value; }).length) {
+              // show the error message
+              errorMessage.show();
+              // prevent the form from submitting
+              event.preventDefault();
+          }
+      });
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="contactus.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+
+      <div id="nav">
+        <span id="dropdown"><ion-icon name="menu"></ion-icon></span>
+        <div id="dropdown-content">
+          <a href="home.html"><ion-icon name="home"></ion-icon> Home </a>
+          <a href="about us.html"><ion-icon name="people"></ion-icon> About us</a>
+          <a href="Course page.html"><ion-icon name="book"></ion-icon> Course</a>
+          <a href="time table.html"><ion-icon name="calendar"></ion-icon> Schedule</a>
+          <a href="registration.html"><ion-icon name="clipboard"></ion-icon> Register</a>
+          <a href="discount.html"><ion-icon name="pricetags"></ion-icon> Discount</a>
+          <a href="paymentPage.html"><ion-icon name="card"></ion-icon> Payment</a>
+          <a href="feedback.html"><ion-icon name="thumbs-up"></ion-icon> Feedback</a>
+          <a href="Studentsupport.html"><ion-icon name="help"></ion-icon> Help</a>
+          <a href="privacypolicy.html"><ion-icon name="lock"></ion-icon> Privacy</a>
+          <a href="contactus.html"><ion-icon name="call"></ion-icon> Contact</a>
+        </div>
+      </div>
+
+        <h1 class="title2">Contact Us</h1>
+        <hr>
+        <h2>Have any questions? We'd love to hear from you</h2>
+        <div class="contact-items">
+            <div class="student-care">
+                <h3>Student Care</h3>
+                <p>Our Support team is spread all over the world to give you fast response</p>
+                <button id="stud-care"> Submit a Request</button>
+                <a href="#"> Frequently asked Questions</a>
+            </div>
+            <div class="write-us">
+                <h3>Write Us</h3>
+                <p> You can write us if you have any queries</p>
+               <a href="#"> <button id="write">Write</button></a>
+          <!-- <a href="./contact-form.html"> <button id="write">Write</button></a>  u-->
+            </div>
+            <div class="map-button">
+                <h3>Address</h3>
+                <p>IIUM, Jalan Gombak, 53100 Gombak, Selangor</p>
+                <button id="map-button">View Map</button>
+                <div id="map" style="display: none;"></div>
+                <script>
+    var mapButton = document.getElementById("map-button");
+    var map = document.getElementById("map");
+
+    mapButton.addEventListener("click", function() {
+        if (map.style.display === "none") {
+            map.style.display = "block";
+            mapButton.innerHTML = "Hide Map";
+        } else {
+            map.style.display = "none";
+            mapButton.innerHTML = "Show Map";
+        }
+    });
+</script>
+<script>
+   $("#map-button").click(function(){
+        $("#map").toggle();
+   });
+</script>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social-footer">
+              <a href="https://www.instagram.com/studyplus___/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://facebook.com/studypluss/?ref=page_internal" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://wa.me/60137969072" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+    </div>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

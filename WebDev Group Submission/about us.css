@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+
+img {
+  margin: 0 550px;/* add 2  0px of space on the left and right of each image */
+position: relative;
+right:500px;
+max-width: 500px;
+transform: translateY(-10%);
+width: 100%;
+top: 50%;
+}
+
+
+
+
+.white-container {
+  max-width: 800px;
+  max-height: 750px;
+  background:#fff;
+  border-radius: 20px;
+  background: #fff; /* white background */
+}
+
+
+
+.sdg{
+  float: left;
+  height: 250px;
+  width: 250px;
+
+}
+
+.edu{
+  float: left;
+  height: 250px;
+  width: 250px;
+  left: -150px;
+  top: -240px;
+
+}
+
+
+
+.text1{
+  position: relative;
+  text-align: center;
+  top: -200px;
+}
+
+.text2{
+  position: relative;
+  text-align: center;
+  top: -200px;
+
+}
+
+#dropdown{
+  background-color: #4b6be0;
+  border-radius: 10px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+#nav{
+  position: relative;
+  top: -15px;
+  left: -30px;
+
+
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdown-content a:hover {background-color: #ddd;}
+
+#nav:hover #dropdown-content {display: block;}
+
+#nav:hover #menu {background-color: #3e8e41;}

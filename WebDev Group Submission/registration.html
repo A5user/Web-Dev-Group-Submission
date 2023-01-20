@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="registration.css">
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+
+
+
+    <div id="container">
+
+      <div id="nav">
+        <span id="dropdown"><ion-icon name="menu"></ion-icon></span>
+        <div id="dropdown-content">
+          <a href="home.html"><ion-icon name="home"></ion-icon> Home </a>
+          <a href="about us.html"><ion-icon name="people"></ion-icon> About us</a>
+          <a href="Course page.html"><ion-icon name="book"></ion-icon> Course</a>
+          <a href="time table.html"><ion-icon name="calendar"></ion-icon> Schedule</a>
+          <a href="registration.html"><ion-icon name="clipboard"></ion-icon> Register</a>
+          <a href="discount.html"><ion-icon name="pricetags"></ion-icon> Discount</a>
+          <a href="paymentPage.html"><ion-icon name="card"></ion-icon> Payment</a>
+          <a href="feedback.html"><ion-icon name="thumbs-up"></ion-icon> Feedback</a>
+          <a href="Studentsupport.html"><ion-icon name="help"></ion-icon> Help</a>
+          <a href="privacypolicy.html"><ion-icon name="lock"></ion-icon> Privacy</a>
+          <a href="contactus.html"><ion-icon name="call"></ion-icon> Contact</a>
+        </div>
+      </div>
+
+
+    <p id="title">REGISTRATION</p>
+
+    <form action="#">
+
+      <div id="user-detail">
+        <div id="input-box">
+          <span id="detail">Email</span>
+          <input type="text" placeholder="Jane24@google.com" id="email" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">Phone Number</span>
+          <input type="text" placeholder="0113849025" id="phone" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">Password</span>
+          <input type="password" placeholder="Password" id="pass" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">Confirm Password</span>
+          <input type="password" placeholder="Confirm Password" id="cpass" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">First Name</span>
+          <input type="text" placeholder="Jenna" id="fname" required>
+        </div>
+        <div id="input-box">
+          <span id="detail">Last Name</span>
+          <input type="text" placeholder="Ortega" id="lname" required>
+        </div>
+      </div>
+
+      <div id="input-box">
+        <div class="checkbox-dropdown">
+        <span id="detail">Subject Interested</span>
+        <ul class="checkbox-dropdown-list">
+          <li>
+            <label>
+              <input type="checkbox" value="bm" name="subject" />Bahasa Melayu</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="english" name="subject" />English</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" value="sejarah" name="subject" />Sejarah</label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" value="math" name="subject" />Mathematics</label>
+                  </li>
+                  <label>
+                    <input type="checkbox" value="ps" name="subject" />Pendidikan Islam</label>
+                  </li>
+
+                </ul>
+              </div>
+      </div>
+      <br><br>
+
+      <div id="gender-title">
+        <span>Gender</span>
+      </div>
+      <div id="gender-section">
+        <input type="radio" id="gender" name="gender" value="MALE" required>
+        <span>Male</span>
+
+        <input type="radio" id="gender" name="gender" value="FEMALE" required>
+        <span>Female</span>
+      </div>
+
+      <div id="tnc-section">
+        <input type="checkbox" id="tnc" name="terms" value="TNC" required>
+        <label for="tnc">I agree with the privacy policy of the company</label>
+      </div>
+
+      <div id='submit-section'>
+        <button type="button" id="submit">Submit</button>
+      </div>
+
+
+    <div id="popup-container">
+      <p id="popup-text">Thank you for choosing Study+</p>
+      <button type="button" id="btnOk">Ok</button>
+    </div>
+
+    <div id="discApplication">
+
+      <p>Needy students? Apply for 40% discount <a href="discount.html"> here</a></p>
+
+    </div>
+
+
+    </div>
+
+  </div>
+  </form>
+
+    <script>
+
+    var phone = document.getElementById('phone');
+    var btnsubmit = document.getElementById('submit');
+    var email = document.getElementById('email');
+    var pass = document.getElementById('pass');
+    var cpass = document.getElementById('cpass');
+    var fname = document.getElementById('fname');
+    var lname = document.getElementById('lname');
+    var btnOk = document.getElementById('btnOk');
+    //var gender = document.getElementById('gender');
+    var tnc = document.getElementById('tnc');
+
+  function openPopup()
+  {
+      if (email.value == ""||phone.value==""||pass.value==""||cpass.value==""||
+      fname.value==""||lname.value==""||pass.value!=cpass.value||!tnc.checked)
+      {
+        document.getElementById("popup-container").style.visibility = "visible";
+        document.getElementById("popup-container").style.top = "50%";
+        document.getElementById("popup-container").style.transform = "translate(-50%, -50%) scale(1)";
+        document.getElementById('popup-text').textContent = "Incomplete detail/Password doesn't match";
+      }
+      else
+      {
+
+        document.getElementById("popup-container").style.visibility = "visible";
+        document.getElementById("popup-container").style.top = "50%";
+        document.getElementById("popup-container").style.transform = "translate(-50%, -50%) scale(1)";
+
+      }
+  }
+
+  function closePopup()
+  {
+    document.getElementById("popup-container").style.visibility = "hidden";
+    document.getElementById("popup-container").style.top = "0";
+    document.getElementById("popup-container").style.transform = "translate(-50%, -50%) scale(0.3)"
+  }
+
+  btnsubmit.onclick = openPopup;
+  btnOk.onclick = closePopup;
+
+  $(".checkbox-dropdown").click(function () {
+    $(this).toggleClass("is-active");
+});
+
+$(".checkbox-dropdown ul").click(function(e) {
+    e.stopPropagation();
+});
+
+    </script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,169 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+     }
+
+     .title2{
+       position: relative;
+       text-align: center;
+     }
+
+     #dropdown{
+       background-color: #4b6be0;
+       border-radius: 10px;
+       color: white;
+       padding: 16px;
+       font-size: 16px;
+       border: none;
+     }
+
+     #nav{
+       position: relative;
+       top: -15px;
+       left: -30px;
+       top: 30px;
+
+     }
+
+     #dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #f1f1f1;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+     }
+
+     #dropdown-content a {
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+     }
+
+     #dropdown-content a:hover {background-color: #ddd;}
+
+     #nav:hover #dropdown-content {display: block;}
+
+     #nav:hover #menu {background-color: #3e8e41;}
+
+
+
+    .container{
+ max-width: 700px;
+ width: 100%;
+ height: 770px;
+ background:#fff;
+ padding: 25px 30px;
+ border-radius: 20px;
+ padding-bottom: 150px;
+}
+     }
+     hr{
+         width: 80%;
+     }
+     h2{
+         font-size: 20px;
+     }
+     .contact-items{
+         display: flex;
+         margin: 30px auto;
+         flex-wrap: wrap;
+         align-items: center;
+
+     }
+     .student-care,.write-us,.map-button{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 28%;
+         margin: 30px auto;
+         padding: 35px 15px;
+         border-radius: 15px;
+         text-align: center;
+         min-width: 250px;
+
+     }
+     .student-care{
+         height: 250px;
+         box-shadow: 0 15px 15px green;
+         border: 1px solid green;
+     }
+     .write-us{
+         height: 250px;
+         box-shadow: 0 15px 15px red;
+         border: 1px solid red;
+     }
+     .map-button{
+         height: 250px;
+         box-shadow: 0 15px 15px blue;
+         border: 1px solid blue;
+     }
+     p{
+         font-size: 15px;
+     }
+     button{
+         padding: 8px 16px;
+         font-size: 17px;
+         border-radius: 25px;
+         border: none;
+         margin: 15px auto;
+         cursor: pointer;
+         color: rgb(255, 255, 255);
+     }
+     button:hover{
+         color: gray;
+     }
+     #stud-care{
+         background: green;
+
+         box-shadow: 0 0 5px black;
+     }
+     #write{
+         background: rgb(187, 15, 15);
+
+         box-shadow: 0 0 5px black;
+     }
+     #map-button{
+         background: blue;
+         box-shadow: 0 0 5px black;
+     }
+     a{
+         font-size: 16px;
+     }
+     .student-care a{
+         color: green;
+         text-shadow: 0 0 2px rgba(73, 129, 80, 0.637);
+     }
+     .map-button a{
+         color: blue;
+         text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
+     }
+
+     .footer .social-footer {
+       text-align: center;
+       padding-bottom: 25px;
+       color: #4b4c4d;
+     }
+
+     .footer .social-footer a {
+       font-size: 24px;
+       color: inherit;
+       border: 1px solid #ccc;
+       width: 40px;
+       height: 40px;
+       line-height: 38px;
+       display: inline-block;
+       text-align: center;
+       border-radius: 50%;
+       margin: 0 8px;
+       opacity: 0.75;
+     }
+
+     .footer .social-footer a:hover {
+       opacity: 0.9;
+     }

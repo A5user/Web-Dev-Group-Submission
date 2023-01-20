@@ -1,0 +1,49 @@
+{
+    "faq": [
+      {
+
+        "question" : "How do I submit my assignments?",
+        "answer": "Assignments can be submitted through the course portal on our website."
+      },
+      {
+        "question": "What is the policy on late assignments?",
+        "answer": "Late assignments will be accepted with a 10% deduction per day."
+      },
+      {
+        "question": "What is the refund policy?",
+        "answer": "Refunds will be issued within 14 days of the start of the course, minus a $50 processing fee."
+      },
+      {
+        "question": "What is the attendance policy?",
+        "answer": "Attendance is mandatory for all classes. More than 2 absences will result in a grade reduction."
+      },
+      {
+        "question": "How can I access the course materials?",
+        "answer": "You can access the course materials by logging into the e-learning platform and navigating to the course page. From there, you will find a link to the course materials."
+      },
+      {
+        "question": "What is the format of the course?",
+        "answer": "The course is offered in an online format, with video lectures, quizzes, and interactive activities."
+      },
+      {
+        "question": "What is the duration of the course?",
+        "answer": "The course is self-paced and you can complete it at your own schedule, but it is estimated to take around 8 weeks to complete."
+      },
+      {
+        "question": "Is there a deadline to complete the course?",
+        "answer": "The course is self-paced, and there is no specific deadline to complete it. But it is recommended to complete the course within a year."
+      },
+      {
+        "question": "Is there a certificate provided after completion of the course?",
+        "answer": "Yes, a certificate of completion will be provided upon successfully completing the course and passing the final assessment."
+      },
+      {
+        "question": "What are the system requirements for the course?",
+        "answer": "The course can be accessed on any device with an internet connection and a modern web browser. You will also need a microphone and camera if you plan to participate in live video sessions."
+      }
+
+    ]
+  }
+
+
+ 

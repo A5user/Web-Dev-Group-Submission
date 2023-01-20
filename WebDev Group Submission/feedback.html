@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Evaluation Page</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<h1 id="h1">Feedback and Evaluation</h1>
+
+<div id="container">
+    <form id="feedback-form" class="white-bg">
+
+      <div id="nav">
+        <span id="dropdown"><ion-icon name="menu"></ion-icon></span>
+        <div id="dropdown-content">
+          <a href="home.html"><ion-icon name="home"></ion-icon> Home </a>
+          <a href="about us.html"><ion-icon name="people"></ion-icon> About us</a>
+          <a href="Course page.html"><ion-icon name="book"></ion-icon> Course</a>
+          <a href="time table.html"><ion-icon name="calendar"></ion-icon> Schedule</a>
+          <a href="registration.html"><ion-icon name="clipboard"></ion-icon> Register</a>
+          <a href="discount.html"><ion-icon name="pricetags"></ion-icon> Discount</a>
+          <a href="paymentPage.html"><ion-icon name="card"></ion-icon> Payment</a>
+          <a href="feedback.html"><ion-icon name="thumbs-up"></ion-icon> Feedback</a>
+          <a href="Studentsupport.html"><ion-icon name="help"></ion-icon> Help</a>
+          <a href="privacypolicy.html"><ion-icon name="lock"></ion-icon> Privacy</a>
+          <a href="contactus.html"><ion-icon name="call"></ion-icon> Contact</a>
+        </div>
+      </div>
+
+      <div id="SelectCourse:"><strong> Select Course </strong></div>
+        <label for="course-select"></label>
+        <select id="course-select">
+          <option value="course1">Bahasa Malayu</option>
+          <option value="course2">English</option>
+          <option value="course3">Sejarah</option>
+          <option value="course3">Mathematics</option>
+          <option value="course3">Pendidikan Islam</option>
+        </select>
+        <br>
+        <label for="rating">Course Rating:</label>
+        <input type="number" id="rating" min="0" max="5">
+        <br>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback"></textarea>
+        <br>
+        <label>Would you recommend it to others?</label>
+        <input type="radio" name="recommendation" value="yes" id="yes" >
+        <label for="yes">Yes</label>
+        <input type="radio" name="recommendation" value="no" id="no" >
+        <label for="no">No</label>
+        <br>
+        <label for="recommendation-comments">Recommendation Comments:</label>
+        <textarea id="recommendation-comments"></textarea>
+        <br>
+        <input type="submit" value="Submit Feedback">
+  </form>
+</div>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="feedback.js"></script>
+</body>
+</html>
